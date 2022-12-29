@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {mobile} from "../responsive"
 
 
 const Container = styled.div`
@@ -14,10 +15,11 @@ background: linear-gradient(
     justify-content:center
 `
 const Wrapper = styled.div`
-padding:20px;
-width:40%;
-background-color:white
-`
+  padding: 20px;
+  width: 40%;
+  background-color: white;
+  ${mobile({ width: '80%' })}
+`;
 const Form = styled.form`
 display: flex;
 flex-wrap: wrap
